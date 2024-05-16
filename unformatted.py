@@ -61,7 +61,7 @@ def many_args(
     h: int,
     i: int,
 ) -> int:
-    return sum(a, b, c, d, e, f, g, h, i)
+    return sum([a, b, c, d, e, f, g, h, i])
 
 
 # function calls can be, too (trailing comma, fewer merge conflicts!)
