@@ -1,0 +1,32 @@
+{ "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    }
+  },
+"isort.args": ["--settings-file","${workspaceFolder}/repos/example/.isort.cfg"],
+"editor.rulers": [
+  // {
+  //   "color": "lightblue",
+  //   "column": 79
+  // },
+  {
+    "color": "green",
+    "column": 99
+  },
+  // {
+  //   "color": "red",
+  //   "column": 119
+  // }
+],
+
+"black-formatter.args": [
+  "--line-length=99"
+],
+"flake8.args": ["--config=${workspaceFolder}/repos/example/.flake8"],
+// "flake8.args": ["--ignore=E305"],
+// "pylint.args": ["--disable=missing-class-docstring,missing-function-docstring"]
+"errorLens.enabled": true,
+//"mypy-type-checker.args": ["--disable-error-code","695"]
+}
