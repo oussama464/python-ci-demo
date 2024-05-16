@@ -10,6 +10,8 @@ from typing import (
 
 @dataclass
 class Animal:
+    """class anaimal"""
+
     name: str = "dog"
 
 
