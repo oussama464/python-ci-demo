@@ -12,7 +12,7 @@ from typing import (
 class Animal:
     """class anaimal"""
 
-    name: str = "dog"
+    name: str = "dogs"
 
 
 @dataclass
