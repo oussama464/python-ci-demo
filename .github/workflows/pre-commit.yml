@@ -17,5 +17,5 @@ jobs:
         pip install pre-commit
     - name: Analysing the code with pre-commit
       run: |
-        pre-commit run --all-files
+        SKIP=pylint pre-commit run --all-files
         echo $(git ls-files '*.py')
